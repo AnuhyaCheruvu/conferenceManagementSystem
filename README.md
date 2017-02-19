@@ -36,7 +36,7 @@ Overdoing it in Python 45min
 ### Output
 
 ```bash
-The Congerence schedulewill be available in /parent-path/to/input_file/Output.txt
+The Conference schedule for the given inut will be available in /parent-path/to/input_file/Output.txt
 ```
 
 ###Design
