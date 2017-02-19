@@ -26,8 +26,8 @@ After `mvn clean install`:
 ```bash
 java -jar /path/to/conference-track-management-1.0-SNAPSHOT.jar /path/to/input_file
 ```
-### Contraints on input
-Input file should contains diffents talks in a new line. Each line(describing the talk) should start with the talk name followed by white space and end with duration. For example:
+### Constraints on input
+Input file should contains diffents talks. Each talk should start with the talk name followed by white space and end with duration in a new line. For example:
 ```bash
 Writing Fast Tests Against Enterprise Rails 60min
 Overdoing it in Python 45min
