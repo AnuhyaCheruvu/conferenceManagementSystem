@@ -28,7 +28,7 @@ After `mvn clean install`:
 java -jar /path/to/conference-track-management-1.0-SNAPSHOT.jar /path/to/input_file
 ```
 ### Constraints on input
-The input file contains different talks which are to scheduled. Each talk should start with the talk name followed by white space and end with duration in a new line. For example:
+The input file contains different talks which are to be scheduled. Each talk should start with the talk name followed by white space and end with duration in a new line. For example:
 ```bash
 Writing Fast Tests Against Enterprise Rails 60min
 Overdoing it in Python lightning
@@ -38,14 +38,14 @@ If the input file doesn't match the pattern then ```IllegalArgumentException``` 
 ### Output
 
 ```bash
-The Conference schedule for the given inut will be available in /parent-path/to/input_file/Output.txt
+The Conference schedule for the given input will be available in /parent-path/to/input_file/Output.txt
 ```
 
 ###Design
 
 ### ConferenceSchedulerMain
 * Helper class to schedule an conference from a given input file which contains the talks that should be scheduled.
-* Throws ```IOException`` and ```IllegalArgumentException```
+* Throws ```IOException``` and ```IllegalArgumentException```
 
 #### ConferenceScheduler
 
