@@ -2,7 +2,7 @@ package assignment.ctf.util;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by user on 2/19/2017.

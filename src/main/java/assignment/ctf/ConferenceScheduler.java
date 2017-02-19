@@ -12,7 +12,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static assignment.ctf.util.Constants.*;
-import static assignment.ctf.util.Constants.EVENT_NAME_INDEX;
 
 /**
  * Created by user on 2/18/2017.

@@ -3,10 +3,6 @@ package assignment.ctf.util;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.sql.Time;
-
-import static org.junit.Assert.*;
-
 /**
  * Created by user on 2/18/2017.
  */

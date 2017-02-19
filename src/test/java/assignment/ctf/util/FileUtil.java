@@ -1,6 +1,9 @@
 package assignment.ctf.util;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 /**
  * Created by user on 2/19/2017.

@@ -45,7 +45,7 @@ public class ConferenceSchedulerTest {
 
     @Test
     public void shouldScheduleConference() throws Exception {
-        BufferedReader input = new BufferedReader(new FileReader("src/test/resources/input.txt"));
+        BufferedReader input = new BufferedReader(new FileReader("src/test/resources/Input.txt"));
         ConferenceScheduler conferenceScheduler = new ConferenceScheduler();
 
         Conference scheduledConference = conferenceScheduler.scheduleConference(input);
