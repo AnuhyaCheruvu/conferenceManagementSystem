@@ -1,12 +1,12 @@
 ## Conference Track Management
 
-### Prerequisites for Building
+### Pre-requisites for Building
 * Java 1.8 or above
 * Maven (for building)
 * JUnit (for test dependencies, resolves while building the project using Maven)
 * Mockito (for test dependencies, resolves while building the project using Maven)
 
-### Prerequisites for Executing the Program
+### Pre-requisites for Executing the Program
 * Java 1.8 or above
 
 ### How to Build
@@ -27,7 +27,7 @@ After `mvn clean install`:
 java -jar /path/to/conference-track-management-1.0-SNAPSHOT.jar /path/to/input_file
 ```
 ### Constraints on input
-Input file should contains diffents talks. Each talk should start with the talk name followed by white space and end with duration in a new line. For example:
+The input file contain diffents talks. Each talk should start with the talk name followed by white space and end with duration in a new line. For example:
 ```bash
 Writing Fast Tests Against Enterprise Rails 60min
 Overdoing it in Python 45min
@@ -45,7 +45,7 @@ The Conference schedule for the given inut will be available in /parent-path/to/
 
 * The `ConferenceScheduler` class provides a method called `scheduleConference()` as an API to create a
   `Conference` object representing a scheduled conference with tracks for the provided input
-* The alogorith behind scheduling the events in sessions is first-fit. 
+* The alogorithm behind scheduling the events in sessions is first-fit. 
 * The Conference object contains the different tracks for the conference
 * Example use of the API:
 ```java
@@ -56,7 +56,7 @@ System.out.println(conference);
 
 #### Conference
 
-* A `Conference` object containss lists of tracks
+* An `Conference` object contains lists of tracks. The toString method prints the details of the conference object.
 
 #### Track
 
@@ -69,5 +69,5 @@ System.out.println(conference);
 
 #### Event
 
-* An event of the conference with specfied duration in min/lightning
+* An event of the conference with specified duration in min/lightning. 1 lightning = 5 min.
 
