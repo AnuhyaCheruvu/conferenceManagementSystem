@@ -3,14 +3,15 @@
 ### Pre-requisites for Building
 * Java 1.8 or above
 * Maven (for building)
-* JUnit (for test dependencies, resolves while building the project using Maven)
-* Mockito (for test dependencies, resolves while building the project using Maven)
+* JUnit version-4.12 (for test dependencies, resolves while building the project using Maven)
+* Mockito version-1.9.5(for test dependencies, resolves while building the project using Maven)
 
 ### Pre-requisites for Executing the Program
 * Java 1.8 or above
 
 ### How to Build
 
+* After extracting the zip file. Follow the below steps:
 ```bash
 cd /path/to/project-root
 mvn clean install
@@ -27,11 +28,12 @@ After `mvn clean install`:
 java -jar /path/to/conference-track-management-1.0-SNAPSHOT.jar /path/to/input_file
 ```
 ### Constraints on input
-The input file contain diffents talks. Each talk should start with the talk name followed by white space and end with duration in a new line. For example:
+The input file contains different talks which are to scheduled. Each talk should start with the talk name followed by white space and end with duration in a new line. For example:
 ```bash
 Writing Fast Tests Against Enterprise Rails 60min
-Overdoing it in Python 45min
+Overdoing it in Python lightning
 ```
+If the input file doesn't match the pattern then ```IllegalArgumentException``` is thrown.
 
 ### Output
 
@@ -41,11 +43,15 @@ The Conference schedule for the given inut will be available in /parent-path/to/
 
 ###Design
 
+### ConferenceSchedulerMain
+* Helper class to schedule an conference from a given input file which contains the talks that should be scheduled.
+* Throws ```IOException`` and ```IllegalArgumentException```
+
 #### ConferenceScheduler
 
 * The `ConferenceScheduler` class provides a method called `scheduleConference()` as an API to create a
   `Conference` object representing a scheduled conference with tracks for the provided input
-* The alogorithm behind scheduling the events in sessions is first-fit. 
+* The algorithm behind scheduling the events in sessions is first-fit.
 * The Conference object contains the different tracks for the conference
 * Example use of the API:
 ```java
@@ -70,4 +76,7 @@ System.out.println(conference);
 #### Event
 
 * An event of the conference with specified duration in min/lightning. 1 lightning = 5 min.
+
+### TestCases
+* Both unitTests and acceptanceTests are included
 
